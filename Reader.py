@@ -1,11 +1,3 @@
-#
-# with open("/Users/arbisoft/Downloads/weatherdata/lahore_weather_1996_Dec.txt", "r+") as weatherFile:
-#     line = str(weatherFile.readline())
-#     while not line == "":
-#         print line
-#         line = weatherFile.readline()
-#
-#
 import os
 
 
@@ -30,8 +22,9 @@ def main():
                     dataMap[title] = parsedList[index]
 
                 dataRows.append(dataMap)
-        dataRows.sort(key= lambda r: r['PKT'])
+        dataRows.sort(key=lambda r: r['PKT'])
         print dataRows
+
 
 if __name__ == '__main__':
     main()
